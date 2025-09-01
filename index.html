@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Academic Homepage</title>
+  <meta name="description" content="Operations Management · Supply Chain · Global Sourcing · Game Theory">
+  <style>
+    :root{
+      --bg:#ffffff; --text:#111; --muted:#4b5563; --link:#1a73e8; --border:#e5e7eb;
+    }
+    *{box-sizing:border-box} html,body{margin:0;padding:0}
+    body{
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+      background: var(--bg); color: var(--text); line-height:1.7;
+    }
+    .container{max-width:1100px; margin:0 auto; padding:28px 24px}
+    /* Header (optional minimal nav; keep if you like anchors) */
+    .header{border-bottom:1px solid var(--border); position:sticky; top:0; background:#fff; z-index:50}
+    .nav{display:flex; align-items:center; justify-content:space-between; gap:16px; padding:12px 0}
+    .brand a{font-weight:700; text-decoration:none; color:var(--text)}
+    .menu a{color:var(--muted); text-decoration:none; margin-left:14px}
+    .menu a:hover,.menu a.active{color:var(--text)}
+    /* Hero like the first screenshot: left text, right photo */
+    .hero{display:grid; gap:24px; grid-template-columns:1.1fr .9fr; align-items:center; margin-top:18px}
+    @media (max-width: 900px){ .hero{grid-template-columns:1fr} }
+    h1{font-size:46px; line-height:1.15; margin:6px 0 10px}
+    .title{font-size:20px; color:var(--muted); margin:0 0 4px}
+    .email{font-size:18px; margin:6px 0 0}
+    .email a{color:inherit; text-decoration:none}
+    .btn{display:inline-block; margin-top:18px; padding:12px 18px; border-radius:8px;
+         background:#f3f4f6; border:1px solid var(--border); color:var(--text); text-decoration:none; font-weight:600}
+    .btn:hover{background:#f8fafc}
+    .headshot{width:100%; height:auto; border:1px solid var(--border)}
+    /* Section style like the second screenshot: header + hr + content */
+    section{margin-top:28px}
+    h2{font-size:26px; margin:0 0 10px}
+    hr.sep{border:0; border-top:1px solid var(--border); margin:12px 0 18px}
+    ul{margin:0; padding-left:20px}
+    li{margin:8px 0}
+    /* Education: left item text, right year range */
+    .edu-list{list-style: disc; padding-left:22px}
+    .edu-item{margin:14px 0}
+    .edu-row{display:flex; justify-content:space-between; gap:18px}
+    .edu-year{white-space:nowrap; color:var(--muted)}
+    .edu-sub{color:var(--muted); margin:3px 0 0 0; padding-left:18px}
+    /* Footer */
+    .footer{border-top:1px solid var(--border); color:var(--muted); font-size:14px; margin-top:32px; padding-top:16px}
+  </style>
+  <script type='application/ld+json'>
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Jingwen Xu",
+    "jobTitle": "Research Assistant Professor",
+    "affiliation": {"@type":"Organization","name":"The Hong Kong Polytechnic University (PolyU)"},
+    "email": "mailto:jingwen@gmail.com",
+    "image": "headshot.jpg",
+    "url": "https://zhanbaozhen.github.io",
+    "knowsAbout": ["Operations management","Supply chain management","Global sourcing","Game theory","Contract design"]
+  }
+  </script>
+</head>
+<body>
+
+<div class="header">
+  <div class="container nav">
+    <div class="brand"><a href=" ">Jingwen Xu</a ></div>
+  </div>
+</div>
+
+
+  <main class="container">
+    <!-- HERO (no long self-description) -->
+    <section id="home" class="hero">
+      <div>
+        <h1>Jingwen Xu</h1>
+        <p class="title">Research Assistant Professor · PolyU</p >
+        <p class="title">Department of Logistics and Maritime Studies</p >
+        <p class="email"><a href="mailto:jingwen@gmail.com">jingwen@gmail.com</a ></p >
+        <a class="btn" href="CV.pdf">My CV</a >
+      </div>
+      <div>
+        < img class="headshot" src="headshot.jpg" alt="Headshot">
+      </div>
+    </section>
+
+    <!-- EDUCATION (format like second screenshot) -->
+    <section id="education">
+      <h2>Education Background</h2>
+      <hr class="sep">
+      <ul class="edu-list">
+        <li class="edu-item">
+          <div class="edu-row">
+            <span>Ph.D. in Operations Management, The Hong Kong Polytechnic University</span>
+            <span class="edu-year">2019–2025</span>
+          </div>
+          <div class="edu-sub">— Advisors: [Advisor A], [Advisor B]</div>
+          <div class="edu-sub">— Dissertation: [Title]</div>
+        </li>
+        <li class="edu-item">
+          <div class="edu-row">
+            <span>M.Phil. in [Field], [University]</span>
+            <span class="edu-year">[Year]–[Year]</span>
+          </div>
+          <div class="edu-sub">— Advisor: [Name]</div>
+          <div class="edu-sub">— Thesis: [Title]</div>
+        </li>
+        <li class="edu-item">
+          <div class="edu-row">
+            <span>B.Econ./B.S. in [Field], [University]</span>
+            <span class="edu-year">[Year]–[Year]</span>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- RESEARCH INTERESTS -->
+    <section id="interests">
+      <h2>Research Interests</h2>
+      <hr class="sep">
+      <ul>
+        <li>Supply chain contracting; information sharing; contract design</li>
+        <li>Global sourcing and procurement; supplier selection</li>
+        <li>Disruption risk and resilience; inventory strategies</li>
+        <li>Platform operations and marketplace design</li>
+        <li>Game theory and analytical modeling</li>
+      </ul>
+    </section>
+
+    <!-- PUBLICATIONS (plain text list, no table) -->
+    <section id="publications">
+      <h2>Publications</h2>
+      <hr class="sep">
+      <ul>
+        <li><strong>Xu, J.</strong>, Coauthor. “Title of Paper.” <em>Production and Operations Management</em>, 2025. [DOI/PDF]</li>
+        <li><strong>Xu, J.</strong>, Coauthor. “Global Sourcing under Disruption Risk.” <em>Manufacturing &amp; Service Operations Management</em>, 2024. [DOI/PDF]</li>
+      </ul>
+    </section>
+
+    <!-- WORKING PAPERS -->
+    <section id="working">
+      <h2>Working Papers</h2>
+      <hr class="sep">
+      <ul>
+        <li>“Platform Sourcing and Seller Entry.”</li>
+        <li>“Information Sharing in Multi-Tier Supply Chains.”</li>
+      </ul>
+    </section>
+
+    <!-- ACADEMIC SERVICE -->
+    <section id="service">
+      <h2>Academic Service</h2>
+      <hr class="sep">
+      <ul>
+        <li>Ad-hoc reviewer — [Journal 1], [Journal 2], [Journal 3]</li>
+        <li>Program committee / Session chair — [Conference], [Year]</li>
+        <li>External referee — [Agency/Grant], [Year]</li>
+      </ul>
+    </section>
+
+    <div class="footer">
+      © <span id="year">2025</span> Jingwen Xu · <a href="mailto:jingwen@gmail.com">jingwen@gmail.com</a > · <a href="CV.pdf">CV</a >
+    </div>
+  </main>
+</body>
+</html>
